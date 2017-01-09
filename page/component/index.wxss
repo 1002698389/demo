@@ -1,0 +1,113 @@
+.index{
+    /*整个页面的背景色字体高度字体大小*/
+    /*让所有弹性盒模型对象的子元素都有相同的长度*/
+    background-color: #FBF9FE;
+    font-family: -apple-system-font,Helvetica Neue,Helvetica,sans-serif;
+    flex: 1;
+    min-height: 100%;
+    font-size: 16px;
+}
+.head{
+    /*设置头部视图内边距*/
+    padding: 40px;
+}
+.body{
+    /*设置cell部分左右边内边距*/
+    padding-left: 15px;
+    padding-right: 15px;
+    overflow: hidden;
+}
+.title{
+    /*小程序组件标题的字体大小*/
+    font-size: 30px;
+}
+.desc{
+    /*展示小程序demo的顶部外边距距离小程序组件的距离 颜色 字体大小*/
+    margin-top: 5px;
+    color: #888888;
+    font-size: 14px;
+}
+
+.widgets__item{
+    /*每个cell和下拉菜单承载视图的外边距设定*/
+    margin-top: 10px;
+    margin-bottom: 10px;
+    background-color: #FFFFFF;
+    overflow: hidden;
+    border-radius: 2px;
+    cursor: pointer;
+}
+.widgets__info{
+    /*每个cell的标题 柔性布局 内边距 cell对其方式 列张开布局*/
+    display: flex;
+    padding: 20px;
+    align-items: center;
+    flex-direction: row;
+}
+.widgets__info_show{
+    /*点击展开下拉菜单透明度变化*/
+    opacity: .4;
+}
+.widgets__info-name{
+    /*让所有cell弹性盒模型对象的子元素都有相同的长度*/
+    flex: 1;
+}
+.widgets__info-img{
+    /*she设置cell图片的宽高*/
+    width: 30px;
+    height: 30px;
+}
+
+.widgets__list{
+    /*下拉菜单元素不会显示*/
+    display: none;
+}
+.widgets__list_show{
+    /*下拉菜单显示*/
+    display: block;
+}
+/*
+.widgets__list{
+    height: 0;
+    overflow: hidden;
+}
+.widgets__list_show{
+    height: auto;
+}
+.widgets__list-inner{
+    opacity: 0;
+    transform: translateY(-50%);
+    transition: .3s;
+}
+.widgets__list-inner_show{
+    opacity: 1;
+    transform: translateY(0);
+}
+*/
+
+.widget{
+    /*所有cell承载视图 设置相对位置 和约束*/
+    position: relative;
+    padding-top: 13px;
+    padding-bottom: 13px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.widget__arrow{
+    /*下拉下单元素中的箭头相对菜单元素绝对位置 设置约束*/
+    position: absolute;
+    top: 14px;
+    right: 22px;
+    width: 8px;
+    height: 16px;
+}
+.widget__line{
+    /*设置下拉菜单元素之间的分割线*/
+    content: " ";
+    position: absolute;
+    left: 20px;
+    bottom: 0;
+    right: 20px;
+    height: 1rpx;
+    background-color: #FFFFFF;
+}
